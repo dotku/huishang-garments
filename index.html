@@ -1,182 +1,197 @@
 <!doctype html>
 <html lang="en" class="h-100">
-  <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.101.0">
-    <meta name="google-site-verification" content="6wqxbKd-HuVQ9AUqNzd2R9V3REk_gxbbcHfadOE8heA" />
-    <title>Huishang Garments</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.101.0">
+  <meta name="google-site-verification" content="6wqxbKd-HuVQ9AUqNzd2R9V3REk_gxbbcHfadOE8heA" />
+  <title>Huishang Garments</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  </head>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cover/">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
 
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDqBqzjHBJ2oQ4JPIcCkEfXUBhonBa3ndOw&usqp=CAU" sizes="180x180">
-<link rel="icon" href="//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDqBqzjHBJ2oQ4JPIcCkEfXUBhonBa3ndOw&usqp=CAU" sizes="32x32" type="image/png">
-<link rel="icon" href="//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDqBqzjHBJ2oQ4JPIcCkEfXUBhonBa3ndOw&usqp=CAU" sizes="16x16" type="image/png">
+<!-- Favicons -->
+<link rel="apple-touch-icon"
+  href="//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDqBqzjHBJ2oQ4JPIcCkEfXUBhonBa3ndOw&usqp=CAU" sizes="180x180">
+<link rel="icon" href="//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDqBqzjHBJ2oQ4JPIcCkEfXUBhonBa3ndOw&usqp=CAU"
+  sizes="32x32" type="image/png">
+<link rel="icon" href="//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDqBqzjHBJ2oQ4JPIcCkEfXUBhonBa3ndOw&usqp=CAU"
+  sizes="16x16" type="image/png">
 <link rel="manifest" href="getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDqBqzjHBJ2oQ4JPIcCkEfXUBhonBa3ndOw&usqp=CAU" color="#712cf9">
+<link rel="mask-icon"
+  href="//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDqBqzjHBJ2oQ4JPIcCkEfXUBhonBa3ndOw&usqp=CAU" color="#712cf9">
 <link rel="icon" href="//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNDqBqzjHBJ2oQ4JPIcCkEfXUBhonBa3ndOw&usqp=CAU">
 
 
-    <style>
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-      a:hover {
-        color: white;
-      }
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+<style>
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+  a:hover {
+    color: white;
+  }
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-    </style>
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
 
-    
-    <!-- Custom styles for this template -->
-    <link href="//getbootstrap.com/docs/5.2/examples/cover.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+</style>
+
+
+<!-- Custom styles for this template -->
+<link href="//getbootstrap.com/docs/5.2/examples/cover.css" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99P3J9NPXR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-99P3J9NPXR');
 </script>
-  </head>
-  <body class="h-100 text-bg-warning">
-    
-<div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
-  <header id="home" class="p-3">
-    <div class="d-flex justify-content-between">
-      <h3 class="">OUXI</h3>
-      <nav class="nav nav-masthead">
-        <a class="pr-3 nav-link py-1 text-dark active" aria-current="page" href="#">Home</a>
-        <a class="pr-3 nav-link py-1 text-dark" href="http://store.ouxi.us">Store</a>
-        <a class="pr-3 nav-link py-1 text-dark" href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-  <div style="min-height: 500px; background: url('https://d2j6dbq0eux0bg.cloudfront.net/startersite/images/77833032/1659636742987.jpg'); background-size: cover; background-position: center">
-    </div>
-  <div class="container ">
-  <main class="p-3 p-sm-5" style="max-width: 800px; margin-left: auto; margin-right: auto">
-    <h3>Highlight</h3>
-    <div class="fw-bold">Design</div>
-    <p>The overall style of Ouxi is unique in artistic design and straightforward temperament. It has gathered dozens of designers in Ouxi for several years. Each piece contains unique design details and charm, and each piece has its own soul.</p>
-    <div class="fw-bold">Quality</div>
-    <p>Ouxi regards quality as life, selects the world's best materials, selects high-grade materials across the country, checks the quality at every level, and creates it in full accordance with international standards.</p>
-    <p class="lead text-center p-3">
-      <a href="http://store.ouxi.us" class="btn btn-lg btn-outline-dark">Store</a>
-    </p>
-  </main>
-  </div>
- 
-  <footer class="mt-auto container">
-    <div class="px-3 px-md-5 pb-4 pt-0" style="max-width: 800px; margin-left:auto; margin-right:auto">
-      <section>
-      <h3 id="contact">Contact</h3>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <div class="fw-bold">Email</div>
-          <div class="mb-3">
-          <a href="mailto:dkwholesale2020+ebike@gmail.com"/>dkwholesale2020+ebike@gmail.com</a>
-        </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <div class="fw-bold">WeChat</div>
-          <div class="mb-3">
-          Julius Liu (LL13544200637)<br/>
-          Kobe Zhao (haroctech)<br/>
-          </div>
-        </div>
+</head>
+
+<body class="h-100 text-bg-warning">
+
+  <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
+    <header id="home" class="p-3">
+      <div class="d-flex justify-content-between">
+        <h3 class="">OUXI</h3>
+        <nav class="nav nav-masthead">
+          <a class="pr-3 nav-link py-1 text-dark active" aria-current="page" href="#">Home</a>
+          <a class="pr-3 nav-link py-1 text-dark" href="http://store.ouxi.us">Store</a>
+          <a class="pr-3 nav-link py-1 text-dark" href="#contact">Contact</a>
+        </nav>
       </div>
+    </header>
+    <div
+      style="min-height: 500px; background: url('https://d2j6dbq0eux0bg.cloudfront.net/startersite/images/77833032/1659636742987.jpg'); background-size: cover; background-position: center">
+    </div>
+    <div class="container ">
+      <main class="p-3 p-sm-5" style="max-width: 800px; margin-left: auto; margin-right: auto">
+        <h3>Highlight</h3>
+        <div class="fw-bold">Design</div>
+        <p>The overall style of Ouxi is unique in artistic design and straightforward temperament. It has gathered
+          dozens of designers in Ouxi for several years. Each piece contains unique design details and charm, and each
+          piece has its own soul.</p>
+        <div class="fw-bold">Quality</div>
+        <p>Ouxi regards quality as life, selects the world's best materials, selects high-grade materials across the
+          country, checks the quality at every level, and creates it in full accordance with international standards.
+        </p>
+        <p class="lead text-center p-3">
+          <a href="http://store.ouxi.us" class="btn btn-lg btn-outline-dark">Store</a>
+        </p>
+      </main>
+    </div>
+
+    <footer class="mt-auto container">
+      <div class="px-3 px-md-5 pb-4 pt-0" style="max-width: 800px; margin-left:auto; margin-right:auto">
+        <section>
+          <h3 id="contact">Contact</h3>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="fw-bold">Email</div>
+              <div class="mb-3">
+                <a href="mailto:dkwholesale2020+ebike@gmail.com" />dkwholesale2020+ebike@gmail.com</a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="fw-bold">WeChat</div>
+              <div class="mb-3">
+                Julius Liu (LL13544200637)<br />
+                Kobe Zhao (haroctech)<br />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pt-3 pt-sm-5">
+          <h3>Address</h3>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="fw-bold">China</div>
+              <div>
+                <address class="text-left">
+                  Julius Liu<br />
+                  Zhouteng Industrial park<br />
+                  Nanwan Subdistrict, Longgang District<br />
+                  Shenzhen, China</address>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="fw-bold">US</div>
+              <div>
+                <address class="text-left">
+                  OUXI DK Wholesale<br />
+                  4125 Hopyard Rd Suite 225<br />
+                  Pleasanton, CA 94588<br />
+                  United State
+                </address>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="copyrights" class="text-center p-5">
+        <div>@2022 OUXI</div>
+        <div><small class="text-white-50">made of ❤️ by <a
+              href="https://www.youtube.com/channel/UCGNNU4NdF0YYeA9o4lSTMcQ" class="">DK Wholesale</a></small></div>
       </section>
-    <section class="pt-3 pt-sm-5">
-      <h3>Address</h3>
-    <div class="row">
-    <div class="col-xs-12 col-sm-6">
-      <div class="fw-bold">China</div>
-      <div>
-        <address class="text-left">
-          Julius Liu<br/>
-          Zhouteng Industrial park<br/>
-          Nanwan Subdistrict, Longgang District<br/>
-        Shenzhen, China</address></div>
-    </div>
-      <div class="col-xs-12 col-sm-6">
-      <div class="fw-bold">US</div>
-      <div>
-        <address class="text-left">
-          OUXI DK Wholesale<br/>
-          4125 Hopyard Rd Suite 225<br/>
-          Pleasanton, CA 94588<br/>
-          United State
-        </address></div>
-    </div>
-    </div>
-    </section>
-    </div>
-    <section id="copyrights" class="text-center p-5">
-    <div>@2022 OUXI</div>
-    <div><small class="text-white-50">made of ❤️ by <a href="https://www.youtube.com/channel/UCGNNU4NdF0YYeA9o4lSTMcQ" class="">DK Wholesale</a></small></div>
-    </section>
-  </footer>
-</div>
+    </footer>
+  </div>
 
-    
-  </body>
+
+</body>
+
 </html>
-
